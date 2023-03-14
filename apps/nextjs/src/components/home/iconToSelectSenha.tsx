@@ -7,6 +7,7 @@ export const IconToSelectSenha = () => {
     senha: 101,
     numero: 1,
     comprado: false,
+    categoria: "aberta",
   };
   const [checked, setChecked] = React.useState(false);
   function HandleCheck() {
