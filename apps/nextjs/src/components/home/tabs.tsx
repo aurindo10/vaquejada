@@ -1,7 +1,6 @@
 import * as Tabs from "@radix-ui/react-tabs/dist/index";
 
 import { CategoriaContainer } from "./categoriaContainer";
-import { IconToSelectSenha } from "./iconToSelectSenha";
 
 export const TabsDeCategoria = () => {
   return (

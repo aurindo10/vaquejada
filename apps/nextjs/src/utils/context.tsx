@@ -1,10 +1,4 @@
-import {
-  Children,
-  ReactNode,
-  createContext,
-  useContext,
-  useState,
-} from "react";
+import { createContext, useState, type ReactNode } from "react";
 
 export const TicketsToBuyContext = createContext([{}] as any);
 
