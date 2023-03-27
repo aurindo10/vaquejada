@@ -71,8 +71,6 @@ export const BuyStepper = ({
       )
       .filter(Boolean);
     setFilteredPuxadores(filtered as SchemaType[]);
-
-    console.log(filtered);
     setArrayOfPuxadores(
       produce<SchemaType[]>((draft) => {
         draft[currentStep]!.puxador = data.puxador;
