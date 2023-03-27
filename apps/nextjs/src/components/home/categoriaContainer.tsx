@@ -2,7 +2,7 @@ import { Drawer } from "./drawerBottom";
 import { IconToSelectSenha } from "./iconToSelectSenha";
 
 const arrayToInterar: number[] = [];
-for (let i = 0; i < 50; i++) {
+for (let i = 0; i < 100; i++) {
   arrayToInterar.push(i);
 }
 

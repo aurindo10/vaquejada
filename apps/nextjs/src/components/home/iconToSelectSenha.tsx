@@ -23,7 +23,7 @@ export const IconToSelectSenha = () => {
     } else {
       setChecked(true);
       setTickets((prevState: any) => {
-        return [...prevState, { ticket: "02" }];
+        return [...prevState, { id: "02" }];
       });
       // colocar funcao para adicionar as informações dessa senha no estado do carinho
     }

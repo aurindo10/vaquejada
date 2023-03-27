@@ -1,10 +1,12 @@
 import React, { useContext } from "react";
+import { useRouter } from "next/router";
 
 import { TicketsToBuyContext } from "~/utils/context";
 
 export function Drawer() {
   const { tickets } = useContext(TicketsToBuyContext);
-
+  const router = useRouter();
+  const dataString = encodeURIComponent(JSON.stringify(tickets));
   return (
     <>
       {tickets.length > 0 && (
@@ -21,7 +23,15 @@ export function Drawer() {
                 </span>
               </p>
             </div>
-            <button className="focus:shadow-outline rounded bg-blue-600 py-2 px-4 font-bold text-white hover:bg-blue-700 focus:outline-none">
+            <button
+              className="focus:shadow-outline rounded bg-blue-600 py-2 px-4 font-bold text-white hover:bg-blue-700 focus:outline-none"
+              onClick={() => {
+                router.push({
+                  pathname: "/checkout",
+                  query: { ticketArray: dataString },
+                });
+              }}
+            >
               Preencher Corredores
             </button>
           </div>
